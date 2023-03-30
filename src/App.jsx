@@ -3,6 +3,7 @@ import Header from './components/Header';
 import { ThemeProvider } from 'styled-components';
 import { COLORS } from './constants/colors';
 import Styles from './styles';
+import Hero from './components/Hero';
 
 function App() {
   const theme = {
@@ -14,6 +15,7 @@ function App() {
       <Styles />
       <AppWrap>
         <Header />
+        <Hero />
       </AppWrap>
     </ThemeProvider>
   );

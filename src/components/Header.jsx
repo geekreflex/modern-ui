@@ -37,7 +37,9 @@ const Header = () => {
 
 export default Header;
 
-const HeaderWrap = styled.div``;
+const HeaderWrap = styled.div`
+  margin-bottom: 10px;
+`;
 const HeaderInner = styled.div`
   display: flex;
   align-items: center;
