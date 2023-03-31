@@ -11,6 +11,8 @@ export default createGlobalStyle`
 
 body {
   background-color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.text_color1};
+  line-height: 30px;
 }
 
 a {

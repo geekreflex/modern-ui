@@ -66,7 +66,6 @@ const HeroInner = styled.div`
       color: ${(props) => props.theme.colors.text_color2};
       font-size: 18px;
       width: 450px;
-      line-height: 1.5;
       margin-bottom: 30px;
     }
   }
