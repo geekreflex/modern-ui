@@ -63,7 +63,7 @@ const HeroWrap = styled.div`
 
   .email-form {
     display: flex;
-    width: 600px;
+    width: 550px;
     input {
       border: none;
       outline: none;

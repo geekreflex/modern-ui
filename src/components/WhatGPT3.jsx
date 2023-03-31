@@ -39,7 +39,9 @@ const WhatGPT3 = () => {
           The possiblities are beyond
           <br /> your imagination
         </h1>
-        <p>Explore The Library</p>
+        <a href="#" className="click">
+          Explore The Library
+        </a>
       </div>
       <div className="what-bottom">
         {items.map((item, index) => (
@@ -56,7 +58,7 @@ const WhatGPT3 = () => {
 export default WhatGPT3;
 
 const WhatWrap = styled.div`
-  margin-bottom: 200px;
+  margin-bottom: 130px;
   overflow: hidden;
   position: relative;
   padding: 60px;
@@ -80,11 +82,6 @@ const WhatWrap = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    p {
-      color: #ff8a71;
-      font-size: 14px;
-    }
   }
 
   .what-bottom {

@@ -6,5 +6,6 @@ export const COLORS = {
   text_color1: '#fff',
   text_color2: '#81AFDD',
   text_color3: '#3D6184',
+  text_color4: '#ff8a71',
   light_blue: '#052D56',
 };

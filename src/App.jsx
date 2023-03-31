@@ -6,6 +6,7 @@ import Styles, { Container } from './styles';
 import Hero from './components/Hero';
 import Companies from './components/Companies';
 import WhatGPT3 from './components/WhatGPT3';
+import Future from './components/Future';
 
 function App() {
   const theme = {
@@ -16,12 +17,17 @@ function App() {
     <ThemeProvider theme={theme}>
       <Styles />
       <AppWrap>
+        <div>
+          <div className="radial-page-1" />
+          <div className="radial-page-2" />
+          <div className="radial-page-3" />
+        </div>
         <Container>
           <Header />
-
           <Hero />
           <Companies />
           <WhatGPT3 />
+          <Future />
         </Container>
       </AppWrap>
     </ThemeProvider>
