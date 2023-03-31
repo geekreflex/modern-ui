@@ -5,6 +5,7 @@ import { COLORS } from './constants/colors';
 import Styles from './styles';
 import Hero from './components/Hero';
 import Companies from './components/Companies';
+import WhatGPT3 from './components/WhatGPT3';
 
 function App() {
   const theme = {
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <Hero />
         <Companies />
+        <WhatGPT3 />
       </AppWrap>
     </ThemeProvider>
   );
