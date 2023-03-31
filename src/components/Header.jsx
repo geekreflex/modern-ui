@@ -1,36 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../styles';
 
 const links = ['Home', 'What is GPT?', 'Open AI', 'Case Studies', 'Library'];
 
 const Header = () => {
   return (
     <HeaderWrap>
-      <Container>
-        <HeaderInner>
-          <a className="logo" href="#">
-            GPT-3
+      <a className="logo" href="#">
+        GPT-3
+      </a>
+      <Nav>
+        <ul>
+          {links.map((link, index) => (
+            <li key={index}>
+              <a href="#">{link}</a>
+            </li>
+          ))}
+        </ul>
+        <div className="auth-btns">
+          <a href="#" id="signin">
+            Sign in
           </a>
-          <Nav>
-            <ul>
-              {links.map((link, index) => (
-                <li key={index}>
-                  <a href="#">{link}</a>
-                </li>
-              ))}
-            </ul>
-            <div className="auth-btns">
-              <a href="#" id="signin">
-                Sign in
-              </a>
-              <a href="#" id="signup">
-                Sign up
-              </a>
-            </div>
-          </Nav>
-        </HeaderInner>
-      </Container>
+          <a href="#" id="signup">
+            Sign up
+          </a>
+        </div>
+      </Nav>
     </HeaderWrap>
   );
 };
@@ -38,9 +33,6 @@ const Header = () => {
 export default Header;
 
 const HeaderWrap = styled.div`
-  margin-bottom: 10px;
-`;
-const HeaderInner = styled.div`
   display: flex;
   align-items: center;
   height: 70px;

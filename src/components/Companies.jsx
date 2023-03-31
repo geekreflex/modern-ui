@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../styles';
 import Dropbox from '../assets/dropbox.png';
 import Google from '../assets/google.png';
 import Shopify from '../assets/shopify.png';
@@ -10,15 +9,13 @@ import Atlassian from '../assets/atlassian.png';
 const Companies = () => {
   return (
     <CompaniesWrap>
-      <Container>
-        <div className="companies">
-          <img src={Google} />
-          <img src={Slack} />
-          <img src={Atlassian} />
-          <img src={Dropbox} />
-          <img src={Shopify} />
-        </div>
-      </Container>
+      <div className="companies">
+        <img src={Google} />
+        <img src={Slack} />
+        <img src={Atlassian} />
+        <img src={Dropbox} />
+        <img src={Shopify} />
+      </div>
     </CompaniesWrap>
   );
 };
