@@ -74,6 +74,7 @@ const WhatWrap = styled.div`
     }
     p {
       flex: 1;
+      font-size: 16px;
     }
   }
 
@@ -92,6 +93,10 @@ const WhatWrap = styled.div`
     position: relative;
     h2 {
       margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 

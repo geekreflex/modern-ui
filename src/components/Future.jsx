@@ -58,10 +58,10 @@ const FutureWrap = styled.div`
   gap: 100px;
 
   .left {
-    width: 30%;
+    width: 35%;
 
     h2 {
-      font-size: 33px;
+      font-size: 35px;
       margin-bottom: 30px;
     }
   }
@@ -83,6 +83,7 @@ const FutureWrap = styled.div`
       p {
         color: ${(props) => props.theme.colors.text_color3};
         flex: 1;
+        font-size: 15px;
       }
     }
   }
