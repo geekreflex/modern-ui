@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container } from '../styles';
 import Head from '../assets/head.png';
+import People from '../assets/people.png';
 
 const Hero = () => {
   return (
@@ -20,9 +21,21 @@ const Hero = () => {
               alteration boisterous the attachment. Party we years to order
               allow asked of.
             </p>
+            <div className="email-form">
+              <input type="text" placeholder="Your Email Address" />
+              <button>Get Started</button>
+            </div>
+            <div className="people">
+              <img src={People} alt="People" />
+              <span>
+                1,600 people requested access to visit in last 24 hours
+              </span>
+            </div>
           </div>
           <div className="hero-right">
-            <img src={Head} />
+            <div className="img-wrap">
+              <img src={Head} />
+            </div>
           </div>
         </HeroInner>
       </Container>
@@ -38,7 +51,7 @@ const HeroInner = styled.div`
   align-items: center;
 
   .hero-left {
-    width: 50%;
+    width: 45%;
     h1 {
       font-size: 50px;
       font-weight: 900;
@@ -51,14 +64,68 @@ const HeroInner = styled.div`
 
     p {
       color: ${(props) => props.theme.colors.text_color2};
+      font-size: 18px;
+      width: 450px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+  }
+
+  .email-form {
+    display: flex;
+    width: 500px;
+    margin-bottom: 30px;
+    input {
+      border: none;
+      outline: none;
+      height: 55px;
+      padding: 0 20px;
+      flex: 1;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      background-color: ${(props) => props.theme.colors.light_blue};
+      color: ${(props) => props.theme.colors.text_color1};
+      font-size: 15px;
+      ::placeholder {
+        color: ${(props) => props.theme.colors.text_color3};
+      }
+    }
+
+    button {
+      background-color: ${(props) => props.theme.colors.orange};
+      border: none;
+      outline: none;
+      padding: 0 30px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      color: ${(props) => props.theme.colors.text_color1};
       font-size: 16px;
     }
   }
 
-  .hero-right {
-    width: 50%;
+  .people {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     img {
-      width: 100%;
+      width: 170px;
+    }
+    span {
+      font-size: 12px;
+      display: inline;
+      color: ${(props) => props.theme.colors.text_color1};
+    }
+  }
+
+  .hero-right {
+    flex: 1;
+    position: relative;
+    .img-wrap {
+      position: relative;
+      img {
+        width: 100%;
+      }
     }
   }
 `;
