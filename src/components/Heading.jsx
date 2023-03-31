@@ -1,25 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Heading = ({ text }) => {
+export const Heading = ({ text }) => {
   return (
-    <HeadingWrap>
-      <div className="head-block"></div>
-      <h2>{text}</h2>
-    </HeadingWrap>
+    <HeadingN>
+      <span></span>
+      {text}
+    </HeadingN>
   );
 };
 
-export default Heading;
+const HeadingN = styled.h2`
+  position: relative;
+  font-size: 25px;
+  font-weight: 900;
 
-const HeadingWrap = styled.div`
-  h2 {
-    font-size: 30px;
-    font-weight: 900;
-    background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 30px;
+  span {
+    width: 40px;
+    height: 3px;
+    background-color: red;
+    display: block;
+    margin-bottom: 20px;
+    background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+      #ffffff;
   }
 `;
