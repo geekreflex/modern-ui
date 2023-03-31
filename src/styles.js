@@ -27,6 +27,14 @@ ul,
 li {
   list-style: none;
 }
+
+.radial {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: ${(props) => props.theme.colors.blue};
+  filter: blur(100px);
+}
 `;
 
 export const Container = styled.div`

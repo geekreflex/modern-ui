@@ -26,6 +26,8 @@ const WhatGPT3 = () => {
     <WhatWrap>
       <Container>
         <WhatInner>
+          <div className="radial radial-top" />
+          <div className="radial radial-bottom" />
           <div className="what-top">
             <Heading text="What is GPT-3" />
             <p>
@@ -59,14 +61,27 @@ const WhatGPT3 = () => {
 
 export default WhatGPT3;
 
-const WhatWrap = styled.div``;
+const WhatWrap = styled.div`
+  .radial-top {
+    left: -400px;
+    top: -400px;
+  }
+
+  .radial-bottom {
+    right: -300px;
+    bottom: -300px;
+  }
+`;
 const WhatInner = styled.div`
+  margin-bottom: 200px;
+  overflow: hidden;
+  position: relative;
   padding: 60px;
   background-color: ${(props) => props.theme.colors.light_blue};
   .what-top {
     display: flex;
     gap: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 
     h2 {
       width: 300px;
@@ -77,7 +92,7 @@ const WhatInner = styled.div`
   }
 
   .what-middle {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +107,8 @@ const WhatInner = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 60px;
+    z-index: 2;
+    position: relative;
     h2 {
       margin-bottom: 30px;
     }
