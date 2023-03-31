@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { COLORS } from './constants/colors';
 import Styles from './styles';
 import Hero from './components/Hero';
+import Companies from './components/Companies';
 
 function App() {
   const theme = {
@@ -16,6 +17,7 @@ function App() {
       <AppWrap>
         <Header />
         <Hero />
+        <Companies />
       </AppWrap>
     </ThemeProvider>
   );
