@@ -9,6 +9,7 @@ import WhatGPT3 from './components/WhatGPT3';
 import Future from './components/Future';
 import Possibility from './components/Possibility';
 import GetStarted from './components/GetStarted';
+import Blog from './components/Blog';
 
 function App() {
   const theme = {
@@ -32,6 +33,7 @@ function App() {
           <Future />
           <Possibility />
           <GetStarted />
+          <Blog />
         </Container>
       </AppWrap>
     </ThemeProvider>

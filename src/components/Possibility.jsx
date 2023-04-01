@@ -53,8 +53,9 @@ const PossWrap = styled.div`
     }
 
     .blue {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: ${(props) => props.theme.colors.light_blue2};
+      display: block;
     }
 
     p {
