@@ -18,7 +18,7 @@ const GetStarted = () => {
 export default GetStarted;
 
 const GetStartedWrap = styled.div`
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   padding: 40px 30px;
   border-radius: 10px;
   background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
