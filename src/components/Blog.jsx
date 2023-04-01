@@ -13,7 +13,7 @@ const Blog = () => {
   return (
     <BlogWrap>
       <h1 className="heading-gradient">
-        A lot is happening, <br /> We are blogginh about it.
+        A lot is happening, <br /> We are blogging about it.
       </h1>
       <BlogPosts>
         <div className="post-current">
