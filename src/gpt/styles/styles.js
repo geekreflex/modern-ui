@@ -1,15 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
+  font-family: 'Manrope', sans-serif;
+  overflow-x: hidden;
   background-color: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.text_color1};
 }
@@ -72,6 +66,14 @@ li {
   left: -600px;
   top: 1500px;
   filter: blur(282px);
+}
+
+.heading-gradient {
+  font-weight: 900;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 `;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../styles';
+import { Container } from '../styles/styles';
 import Logo from '../assets/logo.svg';
 
 const links = ['Overons', 'Social Media', 'Counters', 'Contact'];
@@ -20,7 +20,7 @@ const Footer = () => {
             <h1 className="heading-gradient">
               Do you want to step in to the future before others
             </h1>
-            <button>Get Early Access</button>
+            <button>Request Early Access</button>
           </div>
           <div className="footer-content">
             <div className="footer-logo">
@@ -34,7 +34,7 @@ const Footer = () => {
                 <h3>Links</h3>
                 <ul>
                   {links.map((item) => (
-                    <li>
+                    <li key={item}>
                       <a href="#">{item}</a>
                     </li>
                   ))}
@@ -44,7 +44,7 @@ const Footer = () => {
                 <h3>Company</h3>
                 <ul>
                   {company.map((item) => (
-                    <li>
+                    <li key={item}>
                       <a href="#">{item}</a>
                     </li>
                   ))}
@@ -54,7 +54,7 @@ const Footer = () => {
                 <h3>Links</h3>
                 <ul>
                   {getInTouch.map((item) => (
-                    <li>{item}</li>
+                    <li key={item}>{item}</li>
                   ))}
                 </ul>
               </div>
@@ -93,14 +93,14 @@ const FooterInner = styled.div`
       font-size: 50px;
       width: 700px;
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
 
     button {
       border: 1px solid #fff;
       color: #fff;
       outline: none;
-      padding: 15px 30px;
+      padding: 20px 30px;
       background: transparent;
       font-size: 14px;
       cursor: pointer;
@@ -118,6 +118,13 @@ const FooterInner = styled.div`
 
     .footer-logo {
       width: 250px;
+      a {
+        margin-bottom: 20px;
+        display: block;
+      }
+      p {
+        line-height: 1.4;
+      }
     }
 
     .footer-links {

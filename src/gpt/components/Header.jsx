@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Logo from '../assets/logo.svg';
 
 const links = ['Home', 'What is GPT?', 'Open AI', 'Case Studies', 'Library'];
 
@@ -7,7 +8,7 @@ const Header = () => {
   return (
     <HeaderWrap>
       <a className="logo" href="#">
-        GPT-3
+        <img src={Logo} />
       </a>
       <Nav>
         <ul>
@@ -33,6 +34,7 @@ const Header = () => {
 export default Header;
 
 const HeaderWrap = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   height: 70px;
@@ -45,6 +47,9 @@ const HeaderWrap = styled.div`
   .logo {
     font-weight: 800;
     font-size: 20px;
+    img {
+      width: 70px;
+    }
   }
 `;
 

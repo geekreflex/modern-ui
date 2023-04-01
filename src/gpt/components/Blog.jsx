@@ -32,7 +32,7 @@ const Blog = () => {
         </div>
         <div className="post-grid">
           {posts.map((img) => (
-            <Post>
+            <Post key={img}>
               <img src={img} />
               <div className="content">
                 <div className="post-info">
