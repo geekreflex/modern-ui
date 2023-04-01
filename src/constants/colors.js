@@ -8,4 +8,5 @@ export const COLORS = {
   text_color3: '#3D6184',
   text_color4: '#ff8a71',
   light_blue: '#052D56',
+  light_blue2: '#71E5FF',
 };
