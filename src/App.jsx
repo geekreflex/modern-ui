@@ -8,6 +8,7 @@ import Companies from './components/Companies';
 import WhatGPT3 from './components/WhatGPT3';
 import Future from './components/Future';
 import Possibility from './components/Possibility';
+import GetStarted from './components/GetStarted';
 
 function App() {
   const theme = {
@@ -30,6 +31,7 @@ function App() {
           <WhatGPT3 />
           <Future />
           <Possibility />
+          <GetStarted />
         </Container>
       </AppWrap>
     </ThemeProvider>
