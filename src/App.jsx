@@ -10,6 +10,7 @@ import Future from './components/Future';
 import Possibility from './components/Possibility';
 import GetStarted from './components/GetStarted';
 import Blog from './components/Blog';
+import Footer from './components/Footer';
 
 function App() {
   const theme = {
@@ -35,6 +36,7 @@ function App() {
           <GetStarted />
           <Blog />
         </Container>
+        <Footer />
       </AppWrap>
     </ThemeProvider>
   );
