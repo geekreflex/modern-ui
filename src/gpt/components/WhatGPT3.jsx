@@ -109,4 +109,26 @@ const WhatWrap = styled.div`
     right: -300px;
     bottom: -300px;
   }
+
+  @media (max-width: 800px) {
+    padding: 40px;
+    .what-top {
+      flex-direction: column;
+    }
+    .what-middle {
+      flex-direction: column;
+      align-items: flex-start;
+
+      h1 {
+        order: 2;
+      }
+
+      a {
+        margin-bottom: 20px;
+      }
+    }
+    .what-bottom {
+      grid-template-columns: 1fr;
+    }
+  }
 `;

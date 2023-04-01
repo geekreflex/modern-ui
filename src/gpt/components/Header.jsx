@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../assets/logo.svg';
+import { IoMenu } from 'react-icons/io5';
 
 const links = ['Home', 'What is GPT?', 'Open AI', 'Case Studies', 'Library'];
 
@@ -10,6 +11,7 @@ const Header = () => {
       <a className="logo" href="#">
         <img src={Logo} />
       </a>
+
       <Nav>
         <ul>
           {links.map((link, index) => (
@@ -27,6 +29,9 @@ const Header = () => {
           </a>
         </div>
       </Nav>
+      <Menu>
+        <IoMenu />
+      </Menu>
     </HeaderWrap>
   );
 };
@@ -37,6 +42,7 @@ const HeaderWrap = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 70px;
   gap: 50px;
 
@@ -89,5 +95,19 @@ const Nav = styled.div`
       padding: 10px 25px;
       border-radius: 4px;
     }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+
+const Menu = styled.div`
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    display: flex;
   }
 `;

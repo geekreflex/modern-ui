@@ -28,6 +28,7 @@ const CompaniesWrap = styled.div`
     justify-content: center;
     padding: 80px 0;
     gap: 50px;
+    flex-wrap: wrap;
     img {
     }
   }

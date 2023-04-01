@@ -13,8 +13,7 @@ const Possibility = () => {
           Request Early Access to Get Started
         </a>
         <h1 className="heading-gradient">
-          The possibilities are <br />
-          beyong your imagination
+          The possibilities are beyong your imagination
         </h1>
         <p>
           Yet bed any for travelling assistance indulgence unpleasing. Not
@@ -47,9 +46,13 @@ const PossWrap = styled.div`
   .content {
     width: 50%;
     margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
     h1 {
       font-size: 40px;
       margin-bottom: 30px;
+      width: 500px;
+      max-width: 100%;
     }
 
     .blue {
@@ -60,8 +63,37 @@ const PossWrap = styled.div`
 
     p {
       width: 470px;
+      max-width: 100%;
       margin-bottom: 40px;
       color: ${(props) => props.theme.colors.text_color3};
+    }
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    .img-wrap,
+    .content {
+      width: 100%;
+    }
+
+    .img-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      img {
+        width: 80%;
+      }
+    }
+
+    .content {
+      align-items: center;
+      h1 {
+        text-align: center;
+      }
+      p {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 `;

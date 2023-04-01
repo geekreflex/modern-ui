@@ -22,6 +22,10 @@ li {
   list-style: none;
 }
 
+.gpt3 {
+  overflow-x: hidden;
+}
+
 .click {
   color: ${(props) => props.theme.colors.text_color4};
   font-size: 14px;
@@ -78,7 +82,8 @@ li {
 `;
 
 export const Container = styled.div`
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 `;

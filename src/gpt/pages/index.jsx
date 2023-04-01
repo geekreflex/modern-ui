@@ -19,7 +19,7 @@ const index = () => {
   return (
     <ThemeProvider theme={theme}>
       <Styles />
-      <div>
+      <div className="gpt3">
         <div>
           <div className="radial-page-1" />
           <div className="radial-page-2" />

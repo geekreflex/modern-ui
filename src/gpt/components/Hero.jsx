@@ -7,11 +7,7 @@ const Hero = () => {
   return (
     <HeroWrap>
       <div className="hero-left">
-        <h1>
-          Let's Build Something
-          <br /> amazing with GTP-3 <br />
-          OpenAI
-        </h1>
+        <h1>Let's Build Something amazing with GTP-3 OpenAI</h1>
         <p>
           Yet bed any for travelling assistance indulgence unpleasing. Not
           thoughts all exercise blessing. Indulgence way everything joy
@@ -39,6 +35,7 @@ export default Hero;
 const HeroWrap = styled.div`
   display: flex;
   align-items: center;
+  position: relative;
 
   .hero-left {
     width: 55%;
@@ -64,6 +61,7 @@ const HeroWrap = styled.div`
   .email-form {
     display: flex;
     width: 550px;
+    max-width: 100%;
     input {
       border: none;
       outline: none;
@@ -116,6 +114,75 @@ const HeroWrap = styled.div`
       width: 150%;
       top: 0;
       margin-left: -60px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+
+    .hero-left,
+    .hero-right {
+      width: 100%;
+    }
+
+    .hero-left {
+      order: 1;
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        width: 100%;
+      }
+
+      .email-form {
+        width: 100%;
+      }
+
+      .people {
+        width: 100%;
+      }
+    }
+
+    .hero-right {
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      img {
+        position: static;
+        width: 80%;
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .email-form {
+      flex-direction: column;
+      input,
+      button {
+        border-radius: 10px;
+      }
+      input {
+        padding: 20px;
+        margin-bottom: 15px;
+        ::placeholder {
+          font-size: 14px;
+        }
+      }
+      button {
+        padding: 17px;
+      }
+    }
+    .hero-right {
+      img {
+        width: 100%;
+      }
+    }
+    .people {
+      flex-direction: column;
     }
   }
 `;

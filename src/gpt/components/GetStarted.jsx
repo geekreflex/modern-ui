@@ -46,4 +46,15 @@ const GetStartedWrap = styled.div`
     font-size: 14px;
     font-weight: 600;
   }
+
+  @media (max-width: 800px) {
+    .cta {
+      flex-direction: column;
+      text-align: center;
+
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+  }
 `;

@@ -70,6 +70,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterWrap = styled.div`
+  width: 100%;
   background-color: ${(props) => props.theme.colors.dark_blue};
 `;
 const FooterInner = styled.div`
@@ -92,6 +93,7 @@ const FooterInner = styled.div`
     h1 {
       font-size: 50px;
       width: 700px;
+      max-width: 100%;
       text-align: center;
       margin-bottom: 60px;
     }
@@ -118,12 +120,13 @@ const FooterInner = styled.div`
 
     .footer-logo {
       width: 250px;
+      max-width: 100%;
       a {
         margin-bottom: 20px;
         display: block;
       }
       p {
-        line-height: 1.4;
+        line-height: 1.6;
       }
     }
 
@@ -150,6 +153,26 @@ const FooterInner = styled.div`
           }
           a:hover {
             text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .footer-content {
+      margin-bottom: 40px;
+      gap: 50px;
+      flex-direction: column;
+      .footer-links {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        .links {
+          h3 {
+            margin-bottom: 20px;
+          }
+          ul {
+            gap: 15px;
           }
         }
       }

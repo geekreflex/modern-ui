@@ -87,4 +87,26 @@ const FutureWrap = styled.div`
       }
     }
   }
+
+  @media (max-width: 900px) {
+    gap: 50px;
+    flex-direction: column;
+    .left {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .right {
+      gap: 40px;
+      .future-item {
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+          width: 100%;
+        }
+      }
+    }
+  }
 `;
